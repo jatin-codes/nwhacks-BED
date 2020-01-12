@@ -19,6 +19,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('images', views.store_images),
-    path('addfriends', views.add_friends)
+    path('images/', views.store_images),
+    path('get_user/', views.get_user)
 ]
