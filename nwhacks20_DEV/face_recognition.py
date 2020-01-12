@@ -36,9 +36,11 @@ class FaceRecognition:
 
         if not detected_faces:
             raise Exception('No face detected from image {}'.format(image_name))
+        '''
         print('Detected faces from', image_name, ':')
         for face in detected_faces:
             print(face.face_id)
+        '''
 
         detected_face_ids = list(map(lambda x: x.face_id, detected_faces))
 
@@ -55,6 +57,3 @@ class FaceRecognition:
             return False
         else:
             return True
-
-
-
