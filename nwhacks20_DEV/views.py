@@ -3,6 +3,9 @@ import json
 from nwhacks20_DEV.sql import SQL
 from nwhacks20_DEV.face_recognition import FaceRecognition
 
+CORA_FACE_ID: 'f2abd556-72f7-4826-a2b6-c9e5837e230212:29'
+HUY_FACE_ID: 'e440a597-7c01-424f-b8d0-a42501fe3ee8'
+
 face_reg = FaceRecognition()
 sql = SQL()
 

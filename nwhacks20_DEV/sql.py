@@ -7,7 +7,7 @@ class SQL:
                                           password='Root.123',
                                           host="nwhacks2020.mysql.database.azure.com",
                                           port=3306,
-                                          database='nwhacks2020')
+                                          database='facial_rec')
         self.cursor = self.db.cursor()
 
     '''
