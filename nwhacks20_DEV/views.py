@@ -6,11 +6,11 @@ from nwhacks20_DEV.face_recognition import FaceRecognition
 face_reg = FaceRecognition()
 sql = SQL()
 
-'''
+
 def store_images(request):
     return HttpResponse('YESSSS')
 
-
+'''
 def detect_faces(request, img_url):
     return face_reg.detect_faces(img_url)
 
@@ -38,8 +38,6 @@ def add_friends(request):
     for (name, face_id) in zip(names, face_ids):
         sql.insert_friend_record(name, face_id)
     return HttpResponse('')
-
-
 
 
 
