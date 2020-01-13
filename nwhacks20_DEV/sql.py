@@ -3,11 +3,11 @@ import mysql.connector
 class SQL:
 
     def __init__(self):
-        self.db = mysql.connector.connect(user="linkr@nwhacks2020",
-                                          password='Root.123',
-                                          host="nwhacks2020.mysql.database.azure.com",
+        self.db = mysql.connector.connect(user='',
+                                          password='',
+                                          host='',
                                           port=3306,
-                                          database='facial_rec')
+                                          database='')
         self.cursor = self.db.cursor()
 
     '''

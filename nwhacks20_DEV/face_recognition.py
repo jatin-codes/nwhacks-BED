@@ -14,7 +14,7 @@ from msrest.authentication import CognitiveServicesCredentials
 from azure.cognitiveservices.vision.face.models import TrainingStatusType, Person, SnapshotObjectType, OperationStatusType
 
 
-#FACE_SUBSCRIPTION_KEY
+# FACE_SUBSCRIPTION_KEY
 KEY = '712e44c4280a4b31bb2bd34982673e97'
 
 # FACE_ENDPOINT
