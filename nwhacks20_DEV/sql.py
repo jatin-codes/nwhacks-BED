@@ -6,15 +6,15 @@ class SQL:
         self.db = mysql.connector.connect(user='',
                                           password='',
                                           host='',
-                                          port=3306,
+                                          port=0,
                                           database='')
         self.cursor = self.db.cursor()
 
     '''
-    return a list of tuple (name, face_id) from database
+    return a list of face ids from database
     '''
     def get_face_ids(self):
-        self.cursor.execute('SELECT name, face_id FROM users')
+        self.cursor.execute('SELECT face_id FROM users')
         result = self.cursor.fetchall()
         return result
 
@@ -53,3 +53,4 @@ class SQL:
         self.cursor.execute(sql_command)
         result = self.cursor.fetchone()
         return result
+
