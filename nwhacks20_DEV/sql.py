@@ -3,11 +3,11 @@ import mysql.connector
 class SQL:
 
     def __init__(self):
-        self.db = mysql.connector.connect(user='',
-                                          password='',
-                                          host='',
-                                          port=0,
-                                          database='')
+        self.db = mysql.connector.connect(user='linkr_admin@linkr',
+                                          password='root.123',
+                                          host='linkr.mysql.database.azure.com',
+                                          port=3306,
+                                          database='sampledb')
         self.cursor = self.db.cursor()
 
     '''
@@ -53,4 +53,3 @@ class SQL:
         self.cursor.execute(sql_command)
         result = self.cursor.fetchone()
         return result
-

@@ -15,14 +15,13 @@ def get_user(request):
     huy_id = huy_face_id[0]
     if face_reg.detect_similar_faces(cora_id, face_ids_from_img):
         if face_reg.detect_similar_faces(huy_id, face_ids_from_img):
-            return HttpResponse(huy_id)
-
+            return HttpResponse('Huy is in there')
     return HttpResponse('NONE')
 '''
 
 # what happen if user take a picture
 def request_response_camera(request):
-    img_url = 'fixed designated url for an img taken from app'
+    img_url = 'fixed designated url for an img taken from ap'
     face_ids_from_img = face_reg.detect_faces(img_url)
     face_ids_from_db = sql.get_face_ids()
 
@@ -51,6 +50,3 @@ def request_response_camera(request):
 # to be implemented
 def request_response_home():
     return HttpResponse('')
-
-
-    
