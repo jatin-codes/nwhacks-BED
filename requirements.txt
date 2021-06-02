@@ -5,7 +5,7 @@ django-pipeline==1.5.2
 django-summernote==0.6.10
 tqdm==4.31.0
 tzlocal==1.5.1
-urllib3==1.24.1
+urllib3==1.26.5
 virtualenv==16.2.0
 pytz==2018.4
 
